@@ -231,4 +231,80 @@ public class TestConvert {
 		Assert.assertEquals("deux cent trente-et-un", Convert.num2text("231"));
 	}
 
+	@Test
+	public void test_num2text_61() {
+		Assert.assertEquals("soixante-et-un", Convert.num2text("61"));
+	}
+
+	@Test
+	public void test_num2text_999() {
+		Assert.assertEquals("neuf cent quatre-vingt-dix-neuf",
+				Convert.num2text("999"));
+	}
+
+	@Test
+	public void test_num2text_1337() {
+		Assert.assertEquals("mille trois cent trente-sept",
+				Convert.num2text("1337"));
+	}
+
+	@Test
+	public void test_num2text_137() {
+		Assert.assertEquals("cent trente-sept", Convert.num2text("137"));
+	}
+
+	@Test
+	public void test_num2text_13337() {
+		Assert.assertEquals("treize mille trois cent trente-sept",
+				Convert.num2text("13337"));
+	}
+
+	@Test
+	public void test_num2text_999999() {
+		Assert.assertEquals(
+				"neuf cent quatre-vingt-dix-neuf mille neuf cent quatre-vingt-dix-neuf",
+				Convert.num2text("999999"));
+	}
+
+	@Test
+	public void test_num2text_1000000() {
+		Assert.assertEquals("un million", Convert.num2text("1000000"));
+	}
+
+	@Test
+	public void test_num2text_1235427() {
+		Assert.assertEquals(
+				"un million deux cent trente-cinq mille quatre cent vingt-sept",
+				Convert.num2text("1235427"));
+	}
+
+	@Test
+	public void test_num2text_42() {
+		Assert.assertEquals("quarante-deux", Convert.num2text("42"));
+	}
+
+	@Test
+	public void test_num2text_4242024() {
+		Assert.assertEquals(
+				"quatre millions deux cent quarante-deux mille vingt-quatre",
+				Convert.num2text("4242024"));
+	}
+
+	@Test
+	public void test_num2text_425vrg3256729() {
+		Assert.assertEquals(
+				"quatre cent vingt-cinq virgule trois millions deux cent cinquante-six mille sept cent vingt-neuf",
+				Convert.num2text("425,3256729"));
+	}
+
+	@Test
+	public void test_num2text_81() {
+		Assert.assertEquals("quatre-vingt-un", Convert.num2text("81"));
+	}
+
+	@Test
+	public void test_num2text_81vrg67() {
+		Assert.assertEquals("quatre-vingt-un virgule soixante-sept",
+				Convert.num2text(" 81.67 "));
+	}
 }

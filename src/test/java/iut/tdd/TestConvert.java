@@ -211,4 +211,24 @@ public class TestConvert {
 		Assert.assertEquals("quarante", Convert.num2text("40"));
 	}
 
+	@Test
+	public void test_num2text_71() {
+		Assert.assertEquals("soixante-et-onze", Convert.num2text("71"));
+	}
+
+	@Test
+	public void test_num2text_98() {
+		Assert.assertEquals("quatre-vingt-dix-huit", Convert.num2text("98"));
+	}
+
+	@Test
+	public void test_num2text_404() {
+		Assert.assertEquals("quatre cent quatre", Convert.num2text("404"));
+	}
+
+	@Test
+	public void test_num2text_231() {
+		Assert.assertEquals("deux cent trente-et-un", Convert.num2text("231"));
+	}
+
 }

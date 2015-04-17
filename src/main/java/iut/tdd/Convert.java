@@ -55,12 +55,8 @@ public class Convert {
 			return "cinquante";
 		case 60:
 			return "soixante";
-		case 70:
-			return "soixante-dix";
 		case 80:
 			return "quatre-vingt";
-		case 90:
-			return "quatre-vingt-dix";
 
 		default:
 			return trad(input);
@@ -69,15 +65,39 @@ public class Convert {
 	}
 
 	private static String trad(String input) {
-		switch (input.charAt(1)) {
-		case '1':
-			return num2text(input.charAt(0) + "0") + "-et-"
-					+ num2text("" + input.charAt(1));
+		String res = "";
+		switch (input.length()) {
+		case 3:
+			return num2text(input.charAt(0) + "") + " cent "
+					+ num2text(input.substring(1));
 
 		default:
-			return num2text(input.charAt(0) + "0") + "-"
-					+ num2text("" + input.charAt(1));
+
+			switch (input.charAt(0)) {
+
+			case '7':
+				res += num2text("60") + "-";
+				if (input.charAt(1) == '1') {
+					res += "et-";
+				}
+				res += num2text("1" + input.charAt(1));
+				break;
+			case '9':
+				res += num2text("80") + "-";
+				res += num2text("1" + input.charAt(1));
+				break;
+			default:
+				switch (input.charAt(1)) {
+				case '1':
+					return num2text(input.charAt(0) + "0") + "-et-un";
+
+				default:
+					return num2text(input.charAt(0) + "0") + "-"
+							+ num2text("" + input.charAt(1));
+				}
+			}
 		}
+		return res;
 	}
 
 	public static String text2num(String input) {

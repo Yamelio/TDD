@@ -31,9 +31,51 @@ public class Convert {
 
 		case 9:
 			return "neuf";
+		case 10:
+			return "dix";
+		case 11:
+			return "onze";
+		case 12:
+			return "douze";
+		case 13:
+			return "treize";
+		case 14:
+			return "quatorze";
+		case 15:
+			return "quinze";
+		case 16:
+			return "seize";
+		case 20:
+			return "vingt";
+		case 30:
+			return "trente";
+		case 40:
+			return "quarante";
+		case 50:
+			return "cinquante";
+		case 60:
+			return "soixante";
+		case 70:
+			return "soixante-dix";
+		case 80:
+			return "quatre-vingt";
+		case 90:
+			return "quatre-vingt-dix";
 
 		default:
-			return null;
+			return trad(input);
+
+		}
+	}
+
+	private static String trad(String input) {
+		switch (input.charAt(1)) {
+
+		default:
+			return num2text(input.charAt(0) + "0") + "-"
+					+ num2text("" + input.charAt(1));
+		case 1:
+			return num2text(input.charAt(0) + "0") + "-et-un";
 		}
 	}
 

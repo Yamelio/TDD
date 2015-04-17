@@ -70,12 +70,13 @@ public class Convert {
 
 	private static String trad(String input) {
 		switch (input.charAt(1)) {
+		case '1':
+			return num2text(input.charAt(0) + "0") + "-et-"
+					+ num2text("" + input.charAt(1));
 
 		default:
 			return num2text(input.charAt(0) + "0") + "-"
 					+ num2text("" + input.charAt(1));
-		case 1:
-			return num2text(input.charAt(0) + "0") + "-et-un";
 		}
 	}
 

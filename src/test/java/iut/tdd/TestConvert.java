@@ -17,6 +17,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_un() {
 		// Given
 		String input = "1";
@@ -28,6 +29,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_deux() {
 		// Given
 		String input = "2";
@@ -39,6 +41,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_trois() {
 		// Given
 		String input = "3";
@@ -50,6 +53,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_quatre() {
 		// Given
 		String input = "4";
@@ -61,6 +65,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_cinq() {
 		// Given
 		String input = "5";
@@ -72,6 +77,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_six() {
 		// Given
 		String input = "6";
@@ -83,6 +89,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_sept() {
 		// Given
 		String input = "7";
@@ -94,6 +101,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_huit() {
 		// Given
 		String input = "8";
@@ -105,6 +113,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_neuf() {
 		// Given
 		String input = "9";
@@ -116,6 +125,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_dix() {
 		// Given
 		String input = "10";
@@ -127,6 +137,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_onze() {
 		// Given
 		String input = "11";
@@ -138,6 +149,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_douze() {
 		// Given
 		String input = "12";
@@ -149,6 +161,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_treize() {
 		// Given
 		String input = "13";
@@ -160,6 +173,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_quatorze() {
 		// Given
 		String input = "14";
@@ -171,6 +185,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_quinze() {
 		// Given
 		String input = "15";
@@ -182,6 +197,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_seize() {
 		// Given
 		String input = "16";
@@ -193,6 +209,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_dix_sept() {
 		// Given
 		String input = "17";
@@ -204,6 +221,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_dix_huit() {
 		// Given
 		String input = "18";
@@ -215,6 +233,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_dix_neuf() {
 		// Given
 		String input = "19";
@@ -226,6 +245,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_vingt() {
 		// Given
 		String input = "20";
@@ -237,6 +257,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_vingt_et_un() {
 		// Given
 		String input = "21";
@@ -248,6 +269,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_vingt_deux() {
 		// Given
 		String input = "22";
@@ -259,6 +281,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_vingt_trois() {
 		// Given
 		String input = "23";
@@ -270,6 +293,7 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 
+	@Test
 	public void test_num2text_vingt_quatre() {
 		// Given
 		String input = "24";
